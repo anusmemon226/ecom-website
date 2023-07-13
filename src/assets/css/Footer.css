@@ -1,0 +1,74 @@
+.footer{
+    padding: 60px 0 0px 0 !important;
+}
+.footer-logo{
+    padding: 0 0 15px 0;
+}
+.footer-logo img{
+    width: 200px;
+    filter: invert(1);
+}
+
+.info{
+    & p{
+        margin: 0;
+        padding: 5px 0;
+    }
+}
+
+.social-icons{
+    padding: 20px 0 0 0;
+
+    & svg{
+        font-size: 22px;
+        margin: 0 10px 0 0;
+    }
+}
+
+.link-head h5,.subscribe-head h5{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    & a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+}
+.subscribe-body{
+    & p{
+        margin-top: 15px;
+    }
+
+    & .subscribe-input{
+        & input{
+            box-sizing: border-box;
+            padding: 5px 10px;
+            width: 100%;
+        }
+        & button{
+            background-color: #e7ab3c;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.footer-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    & p{
+        margin: 0;
+    }
+}

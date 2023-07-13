@@ -1,0 +1,223 @@
+.breadcrumbs{
+    padding: 20px 0 !important;
+}
+.shop-container{
+    padding: 40px 0 0px 0 !important;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    & .cat-links{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        & a{
+            text-decoration: none;
+            color: black;
+            padding: 4px 0;
+        }
+    }
+}
+.brands{
+    display: flex;
+    flex-direction: column;
+    & .brands-links{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        & a{
+            text-decoration: none;
+            color: black;
+        }
+        & div{
+            padding: 4px 0;
+
+            & input[type="checkbox"]:checked{
+                accent-color: #e7ab3c;
+            }
+        }
+    }
+}
+
+.price-range{
+    display: flex;
+    flex-direction: column;
+    & .pr-links{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+        & .ranges{
+            & span{
+                width: 50px;
+                height: 25px;
+                border: 1px solid rgb(202, 202, 202);
+                padding: 5px 10px;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+.caption{
+    display: none !important;
+}
+.multi-range-slider .bar-inner,
+.multi-range-slider .bar-right,
+.multi-range-slider .bar-left{
+    height: 5px;
+    border: none !important;
+    box-shadow: none !important;
+}
+.multi-range-slider .thumb::before{
+    border: none !important;
+}
+
+
+
+.products-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.options-controller{
+    display: flex;
+    flex-wrap: wrap;
+    & .product-sort-options{
+
+        & select{
+            padding: 5px 10px;
+            border: 1px solid rgb(202, 202, 202);
+        }
+    }
+    & .product-show-options{
+        margin: 0 0 0 10px;
+
+        & select{
+            padding: 5px 10px;
+            border: 1px solid rgb(202, 202, 202);
+        }
+    }
+}
+.products-showing{
+    & p{
+        margin: 0;
+    }
+}
+.products-card{
+    padding: 10px 0 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right:-15px;
+}
+.product-card{
+    margin: 20px 10px 0 15px;
+    width: 30% !important;
+}
+.product-image img{
+    width: 100%;
+}
+.product-body{
+    & span{
+
+    }
+    & p:nth-child(1){}
+    & p:nth-child(2){}
+}
+
+@media (max-width:991px) {
+    .product-card{
+        width: 45% !important;
+    }
+}
+
+.filter-menu{
+    display: none;
+    cursor: pointer;
+}
+.sidemenu-mobile-controller{
+    display: flex;
+    flex-direction: column;
+}
+.sidemenu-controller{
+    padding: 0 !important;
+}
+@media (max-width:767px){
+    .sidemenu-mobile-controller{
+        padding: 20px 0 0 0 !important;
+        border-top:1px solid black;
+    }
+    .filter-menu{
+        display: block;
+        padding: 0 !important;
+        margin: 0 0 20px 0;
+    }
+    .sidemenu-controller{
+        display: none;
+        width: 100%;
+    }
+    .categories{
+        align-items: center;
+        & .cat-links{
+            align-items: center;
+        }
+    }
+    .brands{
+        align-items: center;
+        & .brands-links{
+            align-items: center;
+        }
+    }
+    .price-range{
+        align-items: center;
+        width: 100%;
+        & .pr-links{
+            align-items: center;
+            width: 100%;
+            & .ranges{
+                & span{
+                    width: 50px;
+                    height: 25px;
+                    border: 1px solid rgb(202, 202, 202);
+                    padding: 5px 10px;
+                    margin-right: 0px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    .range-slide{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media (max-width:576px) {
+    .filter-menu{
+        margin: 0 0 10px 30px;
+    }
+    .breadcrumbs{
+        padding: 20px 30px !important;
+    }
+    .categories,.brands,.price-range{
+        padding: 0 30px !important;
+    }
+    .products-top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .options-controller{
+        justify-content: center;
+        margin-bottom: 10px;
+        & .product-sort-options{
+            margin-bottom: 10px;
+        }
+    }
+    .products-card{
+        justify-content: center !important;
+    }
+    .product-card{
+        width: 65% !important;
+    }
+}

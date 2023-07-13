@@ -2,20 +2,12 @@ import React,{useState} from "react";
 import "../assets/css/Navbar.css"
 import { faCaretDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink,useLocation } from "react-router-dom";
 const SecondaryNavbar = ()=>{
-    const [showMenu,setMenu] = useState(1);
-
-    window.onresize = ()=>{
-        if(window.innerWidth<=767){
-            console.log("matched")
-            setMenu(0)
-        }else{
-            setMenu(1)
-        }
-    }
-
+    const [showMenu,setShowMenu] = useState(false)
+    const currentLocation = useLocation();
     const handleMenu = ()=>{
-        (showMenu===0)?setMenu(1):setMenu(0);
+        setShowMenu(!showMenu)
     }
     return(
         <>
@@ -43,13 +35,10 @@ const SecondaryNavbar = ()=>{
                                 <span className="m-1">MENU</span><FontAwesomeIcon style={{fontSize:"18px"}} icon={faBars}/>
                             </button>
                             <div className="nav-links">
-                                <ul style={{opacity:showMenu}}>
-                                    <li>HOME</li>
-                                    <li>SHOP</li>
-                                    <li>COLLECTION</li>
-                                    <li>BLOG</li>
-                                    <li>CONTACT</li>
-                                    <li>PAGES</li>
+                                <ul className={(showMenu===true)?"menu-bar-active":""}>
+                                    <NavLink to="ecom-website/" className={currentLocation.pathname==="/ecom-website"?"active":""}><li>HOME</li></NavLink>
+                                    <NavLink to="ecom-website/shop" className={currentLocation.pathname==="/ecom-website/shop"?"active":""}><li>SHOP</li></NavLink>
+                                    <NavLink to="ecom-website/contact" className={currentLocation.pathname==="/ecom-website/contact"?"active":""}><li>CONTACT</li></NavLink>
                                 </ul>
                             </div>
                         </div>

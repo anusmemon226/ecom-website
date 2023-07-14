@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecom-website/static/css/main.c7e726ad.css",
-    "main.js": "/ecom-website/static/js/main.a2bd38be.js",
+    "main.css": "/ecom-website/static/css/main.d23d87b5.css",
+    "main.js": "/ecom-website/static/js/main.9de56179.js",
     "static/media/hero-1.jpg": "/ecom-website/static/media/hero-1.420a26d38a4b7f661d28.jpg",
     "static/media/hero-2.jpg": "/ecom-website/static/media/hero-2.28c9298ee78c68f5b0a4.jpg",
     "static/media/women-large.jpg": "/ecom-website/static/media/women-large.2dcbc7b8d822d71e8c36.jpg",
@@ -11,11 +11,11 @@
     "static/media/banner-3.jpg": "/ecom-website/static/media/banner-3.c9797117b3503ed953e2.jpg",
     "static/media/banner-1.jpg": "/ecom-website/static/media/banner-1.f83af332ab144c6eb29b.jpg",
     "index.html": "/ecom-website/index.html",
-    "main.c7e726ad.css.map": "/ecom-website/static/css/main.c7e726ad.css.map",
-    "main.a2bd38be.js.map": "/ecom-website/static/js/main.a2bd38be.js.map"
+    "main.d23d87b5.css.map": "/ecom-website/static/css/main.d23d87b5.css.map",
+    "main.9de56179.js.map": "/ecom-website/static/js/main.9de56179.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7e726ad.css",
-    "static/js/main.a2bd38be.js"
+    "static/css/main.d23d87b5.css",
+    "static/js/main.9de56179.js"
   ]
 }

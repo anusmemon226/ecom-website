@@ -10,7 +10,7 @@ function Home() {
       <CategoryBanner/>
       <ProductsOutlet/>
       <WhyUs/>
-      <ProductsOutlet reverse={true} class={"mensBg"}/>
+      <ProductsOutlet reverse={true} class="mensBg" mens="Men's"/>
     </>
   )
 }

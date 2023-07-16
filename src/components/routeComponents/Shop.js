@@ -39,10 +39,6 @@ function Shop() {
             </div>
             <div className="products-card">
               <ProductCard/>
-              <ProductCard/>
-              <ProductCard/>
-              <ProductCard/>
-              <ProductCard/>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import "../assets/css/Navbar.css"
 import { faCaretDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink,useLocation } from "react-router-dom";
+
 const SecondaryNavbar = ()=>{
     const [showMenu,setShowMenu] = useState(false)
     const currentLocation = useLocation();
@@ -36,9 +37,9 @@ const SecondaryNavbar = ()=>{
                             </button>
                             <div className="nav-links">
                                 <ul className={(showMenu===true)?"menu-bar-active":""}>
-                                    <NavLink to="ecom-website/" className={currentLocation.pathname==="/ecom-website"?"active":""}><li>HOME</li></NavLink>
-                                    <NavLink to="ecom-website/shop" className={currentLocation.pathname==="/ecom-website/shop"?"active":""}><li>SHOP</li></NavLink>
-                                    <NavLink to="ecom-website/contact" className={currentLocation.pathname==="/ecom-website/contact"?"active":""}><li>CONTACT</li></NavLink>
+                                    <NavLink to="ecom-website/" onClick={()=>setShowMenu(false)} className={currentLocation.pathname==="/ecom-website"?"active":""}><li>HOME</li></NavLink>
+                                    <NavLink to="ecom-website/shop" onClick={()=>setShowMenu(false)} className={currentLocation.pathname==="/ecom-website/shop"?"active":""}><li>SHOP</li></NavLink>
+                                    <NavLink to="ecom-website/contact" onClick={()=>setShowMenu(false)} className={currentLocation.pathname==="/ecom-website/contact"?"active":""}><li>CONTACT</li></NavLink>
                                 </ul>
                             </div>
                         </div>

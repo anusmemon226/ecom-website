@@ -72,8 +72,15 @@
 
     /* .bqyzQp{
     } */
+.carousel-image{
+    position: relative;
+}
 
-
+.bVoXXg:hover .addtocart,
+.bVoXXg:hover .addFavourite{
+    opacity: 1;
+    visibility: visible;
+}
 .bVoXXg img{
     width: 100%;
 }

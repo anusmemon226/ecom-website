@@ -42,8 +42,8 @@ const TopBar = ()=>{
 
                         {/* Registration and Signup Div  */}
                         <div className="register-login d-flex">
-                            <Link className="text-dark mx-4 d-flex"><FontAwesomeIcon icon={faUserPlus} className="m-1"/><span className="ms-1">Register</span></Link>
-                            <Link className="text-dark d-flex"><FontAwesomeIcon icon={faUser} className="m-1"/><span className="ms-1">Login</span></Link>
+                            <Link to={"/ecom-website/register"} className="text-dark mx-4 d-flex"><FontAwesomeIcon icon={faUserPlus} className="m-1"/><span className="ms-1">Register</span></Link>
+                            <Link to={"/ecom-website/login"} className="text-dark d-flex"><FontAwesomeIcon icon={faUser} className="m-1"/><span className="ms-1">Login</span></Link>
                         </div>
 
                     </div>

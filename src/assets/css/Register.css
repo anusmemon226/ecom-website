@@ -1,0 +1,136 @@
+.register-section {
+    padding: 80px 0 0 0 !important;
+}
+
+.register-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+}
+
+.register-head h1 {
+    font-size: 30px;
+}
+
+.alreadyRegister p {
+    font-size: 15px;
+    margin: 0;
+
+    & a {
+        color: #e7ab3c;
+    }
+}
+
+.register-form-controller:nth-child(1) {
+    padding: 0 10px 0 0 !important;
+}
+
+.register-form-controller:nth-child(2) {
+    padding: 0 0 0 10px !important;
+}
+
+.register-form-section {
+    padding: 50px 0 0 0;
+}
+
+
+.name-section,
+.city-country-section,
+.state-zip-section,
+.email-phone-section,
+.password-section {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.name-section input,
+.city-country-section input,
+.state-zip-section input,
+.email-phone-section input,
+.password-section input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid rgb(189, 189, 189);
+
+    &:nth-child(1) {
+        margin-right: 10px;
+    }
+}
+
+.address-section {
+    margin-bottom: 16px;
+}
+
+.address-section textarea {
+    width: 100%;
+    border: 1px solid rgb(189, 189, 189);
+    height: 91px;
+    padding: 5px;
+}
+
+.register-btn button {
+    background-color: #e7ab3c;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+
+@media (max-width:991px) {
+    .register-form-controller:nth-child(1) {
+        padding: 0 0 0 0 !important;
+    }
+
+    .register-form-controller:nth-child(2) {
+        padding: 0 0 0 0 !important;
+    }
+}
+
+@media (max-width:576px) {
+    .register-top {
+        padding: 0 20px 0 20px !important;
+        flex-direction: column;
+    }
+
+    .register-form-controller:nth-child(1) {
+        padding: 0 20px 0 20px !important;
+    }
+
+    .register-form-controller:nth-child(2) {
+        padding: 0 20px 0 20px !important;
+    }
+
+    .name-section,
+    .city-country-section,
+    .state-zip-section,
+    .email-phone-section,
+    .password-section {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:452px) {
+
+    .name-section,
+    .city-country-section,
+    .state-zip-section,
+    .email-phone-section,
+    .password-section {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .name-section input,
+    .city-country-section input,
+    .state-zip-section input,
+    .email-phone-section input,
+    .password-section input {
+        margin-bottom: 20px;
+        &:nth-child(1) {
+            margin-right: 0px;
+        }
+    }
+}

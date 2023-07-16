@@ -1,10 +1,15 @@
 import React from "react";
 import "../assets/css/Navbar.css";
 import logo from "../assets/images/web-logo.png";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 import { faSearch,faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { useNavigate } from "react-router-dom";
 const PrimaryNavbar = ()=>{
+    const addedProducts = useSelector((state)=>state.CartItems)
+    const totalPrice = useSelector((state)=>state.TotalPrice)
+    const navigate = useNavigate()
     return(
         <>
             <div className="container px-0 py-4">
@@ -22,11 +27,11 @@ const PrimaryNavbar = ()=>{
                                 <FontAwesomeIcon icon={faHeart} className="heart-icon"/>
                                 <span>0</span>
                             </div>
-                            <div className="cart-controller">
+                            <div className="cart-controller" onClick={()=>navigate("/ecom-website/cart")}>
                                 <FontAwesomeIcon icon={faBagShopping} className="cart-icon"/>
-                                <span>0</span>
+                                <span>{addedProducts.length}</span>
                             </div>
-                            <span className="cart-amount">$150.00</span>
+                            <span className="cart-amount">${totalPrice}</span>
                         </div>
                     </div>
                 </div>
